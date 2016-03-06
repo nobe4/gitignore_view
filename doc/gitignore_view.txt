@@ -1,0 +1,55 @@
+*gitignore_view.txt*                                   Last Change: Mar 6 2016
+
+        Gitignore View
+        Preview your gitignore pattern.
+        By: Victor Haffreingue
+
+        License |MIT|
+
+==============================================================================
+CONTENTS                                              *gitignore_view_content*
+
+    1. Usage ........................................ |gitignore_view_usage|
+    2. Installation ................................. |gitignore_view_install|
+    2. Configuration ................................ |gitignore_view_config|
+    3. Contributing ................................. |gitignore_view_contrib|
+
+==============================================================================
+USAGE                                                   *gitignore_view_usage*
+
+You can access the main functionnality by calling the `:GitignoreView`
+command. >
+
+  :GitignoreView
+
+From there you can enter your regex and the excluded files will appears
+underneath.
+
+==============================================================================
+INSTALLATION                                          *gitignore_view_install*
+
+Use your favorite plugin manager to install this plugin.
+
+e.g. >
+
+  " vim-plug
+  Plug "nobe4/gitignore_view"
+
+==============================================================================
+CONFIGURATION                                          *gitignore_view_config*
+
+By default, the plugin uses a temporary file to store the gitignore config.
+You can specify a custom file with the variable `g:gitignore_file`.
+
+e.g. >
+
+  " In your .vimrc
+  let g:gitignore_file = '/tmp/other_gitignore_file'
+
+==============================================================================
+CONTRIBUTING                                          *gitignore_view_contrib*
+
+If you want to improve this plugin, or if you found a bug, feel free to open
+an issue.
+
+vim:tw=78:ts=8:ft=help:norl:
